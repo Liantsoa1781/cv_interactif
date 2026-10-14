@@ -1,0 +1,56 @@
+{
+    "nom": "Ranto Landria",
+    "poste": "Développeur Web Full Stack",
+    "email": "ranto.landria@example.com",
+    "ville": "Lyon, France",
+
+    "presentation": "Développeur web en formation à ORT Lyon, je m'intéresse à la création d'applications web et mobiles.",
+
+    "competences": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Laravel",
+        "Java",
+        "Spring Boot",
+        "PostgreSQL"
+    ],
+
+    "formations": [
+        {
+            "diplome": "Bachelor 3 - Concepteur Développeur Web Full Stack",
+            "etablissement": "ORT Lyon",
+            "periode": "2026 - En cours",
+            "description": "Développement web full stack, conception d'applications, bases de données et programmation."
+        },
+        {
+            "diplome": "BTS SIO - Option SLAM",
+            "etablissement": "Lycée Jacques Brel, Vénissieux",
+            "periode": "2025 - 2026",
+            "description": "Développement d'applications, programmation, bases de données et conception de solutions informatiques."
+        },
+        {
+            "diplome": "Licence en informatique",
+            "etablissement": "ITU, Madagascar",
+            "periode": "2024 - 2025",
+            "description": "Formation en informatique et développement d'applications."
+        }
+    ],
+    "experiences": [
+        {
+            "poste": "Stagiaire en développement web",
+            "entreprise": "BNP Paribas",
+            "lieu": "Paris",
+            "periode": "Mai - Juin 2026",
+            "description": "Développement et maintenance d'applications web internes avec PHP 8.3 et Laravel. Intégration de pages à partir de maquettes, correction de bugs et utilisation de GitLab CI."
+        },
+        {
+            "poste": "Développeuse d'une application mobile",
+            "entreprise": "Projet personnel - Hang'AR",
+            "lieu": "",
+            "periode": "2024 - 2025",
+            "description": "Conception d'une application mobile de gestion d'une école de danse avec React Native, Expo, Spring Boot et PostgreSQL. Développement des fonctionnalités de réservation, d'abonnement et de notification."
+        }
+    ]   
+}
