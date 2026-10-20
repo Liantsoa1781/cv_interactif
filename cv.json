@@ -47,8 +47,8 @@
         },
         {
             "poste": "Développeuse d'une application mobile",
-            "entreprise": "Projet personnel - Hang'AR",
-            "lieu": "",
+            "entreprise": "Hang'AR",
+            "lieu": "Madagascar",
             "periode": "2024 - 2025",
             "description": "Conception d'une application mobile de gestion d'une école de danse avec React Native, Expo, Spring Boot et PostgreSQL. Développement des fonctionnalités de réservation, d'abonnement et de notification."
         }

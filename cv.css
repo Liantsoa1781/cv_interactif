@@ -22,6 +22,13 @@ body {
     padding: 1.8rem;
 }
 
+#div_bas {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
 #title {
     font-size: 2rem;
     margin-bottom: 0.6rem;
@@ -39,7 +46,7 @@ body {
 
 #div_infos {
     background-color: #f0f3f5;
-    /* box-sizing: border-box; */
+    padding: 15px;
 }
 
 /* Titres des rubriques */
@@ -49,7 +56,7 @@ body {
     font-weight: bold;
 }
 
-/* Créer ces css apres le bloc infos */
+/* Créer ces css avant le bloc infos */
 #blocGithub::before {
     content: "PROFIL:";
     display: block;
@@ -65,8 +72,8 @@ body {
     margin-bottom: 0.9375rem;
 }
 
-#skills {
-    list-style-type: square;
+#div_competences {
+    padding: 15px;
 }
 
 #skills li {
@@ -75,24 +82,9 @@ body {
 }
 
 #avatar_github {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
-}
-
-#div_bas {
-    display: grid;
-    grid-template-columns: 30% minmax(0, 1fr);
-    gap: 1.5rem;
-    padding: 1.5rem;
-}
-
-#div_gauche {
-    min-width: 0;
-}
-
-#div_droite {
-    min-width: 0;
 }
 
 #div_parcours h2 {
@@ -109,4 +101,45 @@ body {
 #bloc_formation h3,
 #bloc_experience h3 {
     margin-bottom: 0.3rem;
+}
+
+#btn-imprimer {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#btn-imprimer:hover {
+    background-color: #1d4ed8;
+}
+
+/* Format de la page imprimée */
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+@media screen and (max-width: 768px){
+    #div_bas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media print {
+    #btn-imprimer{
+        display: none;
+    }
+    #div_haut{
+        background-color: #c5621f;
+        color: white;
+        padding: 1.8rem;
+    }
 }
