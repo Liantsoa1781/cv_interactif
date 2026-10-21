@@ -151,14 +151,17 @@
     //Charger les données de l'API Github
     function afficherCvGithub(){
         fetch("https://api.github.com/users/Liantsoa1781")
-            .then(function(response){
-                return response.json();
+            .then(function(reponse) {
+                if (!reponse.ok) {
+                    throw new Error("Impossible de charger cv.json");
+                }
+
+                return reponse.json();
             })
             //Prendre les données recu de l'API Git deja transformer en javascript
             .then(function(donnees_github){
                 const blocGithub = document.createElement("div");
                 blocGithub.id = "blocGithub";
-                document.body.appendChild(blocGithub);
 
                 const pdp = document.createElement("img");
                 pdp.src = donnees_github.avatar_url;
